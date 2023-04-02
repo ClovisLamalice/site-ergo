@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="comm.css">
+  <link rel="icon" href="icon\logo.png">
+  <script src="style.js"></script>
+</head>
+<body>
+
+  <div class="top_bar1">
+    <div class="top_bar1_content">
+        <button class="liftlife">
+          <a href="../clovis/index.html" class="liftlife">
+              <h1>LIFTLIFE</h1>
+          </a>
+        </button>
+        <div class="searchbar">
+            <form>
+                <input type="text" placeholder="Rechercher...">
+                <button type="submit">Go</button>
+            </form>
+        </div>
+        <div class="count">
+            <div onclick="changeColor(this)" class="personnal_button">
+                <img class="button_count_basket" src="icon/icons8-utilisateur-50.png" alt="compte">
+            </div>
+            <div onclick="changeColor(this)" class="personnal_button">
+                <img class="button_count_basket" src="icon/icons8-panier-48.png" alt="panier">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div class="pages_content">
+        <div class="page_button" onclick="redirect1()">
+            <p class="top_bar_title">Muscles</p>
+        </div>
+        <div class="page_button" onclick="redirect2()">
+            <p class="top_bar_title">Nutrition</p>
+        </div>
+        <div class="page_button2" onclick="redirect3()">
+            <p class="top_bar_title">Entrainement</p>
+        </div>
+    </div>
+</div>
+
+<!-- alterner avec hr comme clovis
+image droite txte gauche 
+image gauche txt droite  -->
+
+<div class="content">
+</br>
+</br>
+</br>
+<div class= "intro_exo">
+<h2>Entraînement</h2>
+<hr>
+</br>
+</br>
+<p class="Intro">
+  Bienvenue sur la page des exercices de <span class="title">LIFTLIFE</span> !</br>
+  Vous souhaitez vous lancer dans la musculation mais ne savez pas par où commencer ? </br>
+  Ou peut-être êtes-vous un pratiquant confirmé en quête de nouveaux exercices et de méthodes d'entraînement ? </br>
+  Chez <span class="title">LIFTLIFE</span>, nous vous proposons un accompagnement personnalisé pour vous aider à atteindre vos objectifs. </br>
+  Vous trouverez ici des planifications d'entraînement en fonction de votre emploi du temps.</br>
+  Vous trouverez également une large gamme d'exercices que vous pouvez faire pour travailler chacun de vos muscles.</br>
+  Si vous souhaitez atteindre vos objectifs de manière efficace et sécurisée vous êtes au bon endroit.</br>
+</p>
+</div>
+
+
+
+  <div class="select">
+
+  </br></br></br>
+  <p><span class="combien">Combien de séances </span>d'entraînement souhaitez-vous faire par semaine ?</p></br>
+</br>
+</br></br>
+  
+  <input type="range" value="0" min="0" max="7" id="range-input" class="slider" /></br>
+</br>
+</br>
+</br>
+  <p>Vous avez sélectionné <span class="seances no_train" >0</span> séances par semaine.</p></br></br></br></br>
+</div>
+  
+  <div class="train">
+  <div class="full-body">
+      <p>Afin d'atteindre vos objectifs quels qu'ils soient, avec <span class="seances">0</span> séances par semaines.
+      Nous recommandons un programme <span class="name">Full-Body</span>.</br></br>
+      L'entraînement <span class="name">Full-Body</span> en musculation consiste à travailler tous les groupes musculaires dans une seule séance. </br></br>
+      Cette méthode utilise des exercices composés tels que le <a href="#squat">squat</a>, les <a href="#tractions">tractions</a> et le <a href="#dev_couche">développé couché</a>.</br></br>
+      Elle est souvent utilisée par les débutants ou les personnes ayant peu de temps pour s'entraîner.</p></br></br>
+  </div>
+
+  
+  <div class="half-body">
+    <p>Afin d'atteindre vos objectifs quels qu'ils soient, avec <span class="seances">0</span> séances par semaines.
+      Nous recommandons un programme <span class="name">Half-Body</span>. </br></br>
+      L'entraînement <span class="name">Half-Body</span> en musculation consiste à travailler la moitié supérieure ou inférieure du corps lors d'une séance.</br></br>
+      Il permet de se concentrer sur un groupe musculaire spécifique tout en répartissant la charge sur les autres groupes musculaires. </br></br>
+      Les exercices utilisés dépendent de la partie du corps ciblée comme le <a href="#squat">squat</a>, le <a href="#leg_extension">leg extension</a> ou le <a href="#leg_curl">leg curl</a> pour les jambes.</br></br>
+      Cette méthode est souvent utilisée par les personnes qui cherchent à cibler des zones spécifiques de leur corps.</p></br></br>
+    </div>
+
+
+  <div class="split">
+  <p>Afin d'atteindre vos objectifs quels qu'ils soient, avec <span class="seances">0</span> séances par semaines.
+    Nous recommandons un programme <span class="name">Split</span>.</br></br>
+    Le <span class="name">Split</span> est un programme d'entraînement en musculation qui se concentre sur des groupes musculaires spécifiques</br></br>
+    Les différentes parties du corps sont travaillées à des moments différents de la semaine.</br></br>
+    Grâce à cette méthode nous pouvons isoler les groupes musculaires et les travailler en profondeur. </br></br>
+    C'est le cas de <a href="#arriere_epaule">l'arrière d'épaule</a> , le <a href="#haut_pec">haut des pectoraux</a> ou les <a href="#avant_bras">avants-bras</a>.</br></br>
+    Cela permet une plus grande attention portée aux muscles ciblés.</p></br></br>
+  </div>
+
+<div class="ppl">
+  <p>Afin d'atteindre vos objectifs quels qu'ils soient, avec <span class="seances">0</span> séances par semaines.
+    Nous recommandons un programme <span class="name">PPL</span>. </br></br>
+    Le <span class="name">PPL</span> (Push Pull Legs) est un programme d'entraînement en musculation axé sur trois types de mouvements </br></br>
+    les poussées, les tirages et les exercices pour les jambes. </br></br>
+    Les mouvements de poussées sont des exercices qui impliquent les pectoraux, les épaules et les triceps.</br></br>
+    Pour les travailler nous vous conseillons le <a href="#dev_mili">developpé militaire pour les épaules</a>, les <a href="#extens">extension triceps</a> et le <a href="#pec_fly">pec fly</a>.</br></br>
+    Les mouvements de tirages sont des exercices qui impliquent les dorsaux, les biceps.</br></br>
+    Pour les travailler nous vous conseillons le <a href="#rowing">rowing</a> pour le dos et le <a href="#curl">curl</a> pour les biceps.</br></br>
+    Les exercices pour les jambes sont des exercices qui impliquent les quadriceps, les ischio-jambiers et les fessiers.</br></br>
+    Pour les travailler nous vous conseillons le <a href="#squat">squat</a> pour les fessiers, le <a href="#leg_extension">leg extension</a> pour les ischio-jambiers et le <a href="#leg_curl">leg curl</a> pour les fessiers.</br></br>
+    Il est réparti en trois séances d'entraînement distinctes et vise à développer la force et la masse musculaire dans l'ensemble du corps.</br></br>
+    Les exercices utilisés varient en fonction de l'objectif de l'entraînement et du niveau de l'athlète.</p></br></br>
+</div>
+</div>
+
+</br>
+</br>
+</br>
+
+
+<div class="exercices">
+
+  <h2 id="dev_couche">Développé couché</h2>
+  <hr>
+</br>
+  <img src="image/dev_couche.png" alt="dev_couche" style="float:left; margin-right:10px;"/>
+  <p>Prendre la barre, mains en pronation en prenant un écartement supérieur à la largeur des épaules. 
+      Inspirer et descendre la barre en contrôlant le mouvement jusqu'à la poitrine. 
+      Développer en expirant en fin d'effort.</p>
+</div>
+</br>
+</br>
+</br>
+</br>
+
+  <div class ="exercices developpe_incline">
+    <h2 id="haut_pec">Développé incliné</h2>
+    <hr>
+    <img src="image/developpe-incline-removebg-preview.png" style="float:right; margin-left:10px;"/>
+    <p>
+      Prendre la barre, mains en pronation en prenant un écartement supérieur à la largeur des épaules. 
+        S'allonger sur le banc incliné et placer la barre au niveau de la poitrine. Inspirer et descendre la barre en contrôlant le mouvement jusqu'à la clavicule en gardant les coudes fléchis à environ 45 degrés par rapport au corps. 
+        Remonter la barre en expirant en fin d'effort en contrôlant le mouvement.
+    </p></br>
+    
+  </div>
+
+
+  <div class ="exercices pec_fly">
+    <h2 id="pec_fly">Pec fly</h2>
+    <hr>
+  </br>
+    <img src="image/pec_fly-removebg-preview.png" style="float:left; margin-right:10px;"/>
+    <p>Asseyez-vous sur la machine avec le dos bien droit et les pieds fermement ancrés sur le sol. 
+      Placez vos avant-bras sur les coussinets et saisissez les poignées. 
+      Inspirez en écartant lentement vos bras sur les côtés, en gardant une légère flexion aux coudes.
+      Continuez jusqu'à ce que vous ressentiez une tension dans la poitrine, puis expirez et ramenez vos bras lentement vers l'avant en les croisant devant vous.</p>
+    </br>
+  </div>
+</br></br></br></br>
+
+  <div class ="exercices dm">
+    <h2 id="dev_mili">Développé militaire</h2>
+    <hr>
+  </br>
+    <img src="image/dm-removebg-preview.png" style="float:right; margin-left:10px;"/>
+    </br>
+    <p>Pour réaliser le développé militaire, il est important de bien positionner la barre sur le haut de la poitrine. 
+      Les mains doivent être légèrement plus écartées que la largeur des épaules et les coudes doivent être orientés vers l'avant. 
+      Une fois en position, il faut expirer et pousser la barre vers le haut jusqu'à ce que les bras soient tendus. 
+      Il est important de garder une bonne stabilité dans le corps en contractant les abdominaux et les fessiers pendant l'exercice. 
+      Ensuite, il faut inspirer et redescendre la barre lentement en contrôlant le mouvement jusqu'à la position de départ.</p>
+  </div>
+</br></br></br></br>
+
+
+  <div class ="exercices elvation">
+    <h2>Elévation latérale</h2>
+    <hr>
+    </br>
+    <img src="image/elevation-laterale.png" style="float:left; margin-right:10px;"/>
+   </br>
+   <p>Pour réaliser une élévation latérale, debout, les pieds écartés à la largeur des épaules, 
+    les bras le long du corps, les haltères dans les mains, les paumes vers l'avant.
+    Élevez lentement les bras sur les côtés, en gardant les coudes légèrement fléchis, jusqu'à atteindre 
+    la hauteur des épaules. Maintenez la position pendant une seconde avant de redescendre les bras 
+    lentement vers la position de départ.</p> 
+  </div>
+</br></br></br></br>
+
+
+  <div class ="exercices arriere">
+    <h2 id="arriere_epaule">Arrière d'épaule à la poulie</h2>
+    <hr>
+  </br>
+    <img src="image/arriere-epaule.png.png" style="float:right; margin-left:10px;"/>
+    </br>
+    <p>Placez la poignée haute de la machine à poulie à une hauteur supérieure à celle de vos épaules. 
+      Tenez la poignée avec une main en la gardant près de votre corps et en gardant votre coude légèrement fléchi. 
+      Sans bouger le reste du corps, tirez la poignée vers l'arrière en gardant votre coude légèrement fléchi jusqu'à ce que votre bras soit parallèle au sol. 
+      Maintenez la contraction pendant une seconde, puis relâchez lentement le bras jusqu'à la position de départ.</p>
+  </div>
+</br></br></br></br>
+
+
+  <div class ="exercices extension">
+    
+    <h2 id="extens">Extension triceps</h2>
+    <hr>
+  </br>
+    <img src="image/extension.png" style="float:left; margin-right:10px;"/>
+    </br>
+    <p>Placez-vous devant une poulie haute en utilisant une barre en V. 
+      Saisissez la barre avec une prise en pronation, mains à la largeur des épaules. 
+      Poussez la barre vers le bas en gardant les coudes près de votre corps. 
+      Une fois que vous avez atteint le bas de l'exercice, contractez vos triceps et remontez la barre en contrôlant le mouvement. 
+      Répétez pour le nombre de répétitions souhaité.</p>
+  </div>
+</br></br></br></br>
+
+  <div class ="exercices front">
+    <h2>Barre au front</h2>
+    <hr>
+  </br>
+    <img src="image/front_barre.png" style="float:right; margin-left:10px;"/>
+    </br>
+    <p>
+      La barre au front est un exercice de musculation pour les triceps. 
+      Pour réaliser cet exercice, allongez-vous sur un banc avec la tête qui dépasse légèrement. 
+      Prenez une barre avec une prise en pronation (paumes vers l'avant) à une largeur légèrement supérieure à la largeur des épaules. 
+      Fléchissez les coudes pour amener la barre vers le front tout en gardant les coudes pointant vers le haut. 
+      Puis, étendez les bras pour ramener la barre au-dessus de votre tête. 
+      Veillez à garder les coudes fixes tout au long de l'exercice et à contrôler la descente de la barre.
+      </p>
+  </div>
+</br></br></br></br>
+
+  <div class ="exercices curl">
+    <h2 id="curl">Curl Biceps</h2>
+    <hr>
+  </br>
+    <img src="image/curl.png" style="float:left; margin-right:10px;"/>
+    </br>
+    <p>Pour réaliser le curl biceps à la barre EZ, tenez la barre avec une prise en supination (paumes vers le plafond) et les mains légèrement écartées. 
+      Gardez les coudes proches du corps et fléchissez les bras jusqu'à ce que la barre atteigne les épaules. 
+      Contractez les biceps en haut du mouvement avant de redescendre la barre lentement et contrôlée. 
+      Répétez l'exercice pour compléter votre série.</p>
+  </div>
+</br></br></br></br>
+
+  <div class ="exercices curl-marteau">
+    <h2 id="avant_bras">Curl marteau</h2>
+    <hr>
+  </br>
+    <img src="image/curl-marteau-removebg-preview.png" style="float:right; margin-left:10px;"/>
+    <p>Pour effectuer un curl marteau, tenez une paire d'haltères dans chaque main, bras le long du corps. 
+      Vos paumes doivent être tournées l'une vers l'autre.
+      Fléchissez vos coudes et amenez les haltères jusqu'à vos épaules en gardant vos poignets droits. 
+      Gardez vos coudes le long de votre corps et ne bougez que vos avant-bras. Expirez en levant les haltères et inspirez en les abaissant. 
+      Répétez pour compléter votre série.</p> 
+  </br>
+  </div>
+</br></br></br></br>
+
+
+  <div class ="exercices tractions">
+    <h2 id="tractions">Traction</h2>
+    <hr>
+  </br>
+    <img src="image/traction-removebg-preview.png" style="float:left; margin-right:10px;"/>
+    <p>
+      <p>Les tractions sont un exercice de base pour le dos et les biceps. 
+        Pour effectuer une traction, commencez par accrocher une barre de traction à une hauteur suffisante pour que vous puissiez vous suspendre sans toucher le sol.
+        Saisissez la barre avec une prise en supination (paumes tournées vers vous) ou une prise en pronation (paumes tournées vers l'extérieur) en fonction de votre préférence. 
+        Vous pouvez également utiliser une prise en neutre (paumes face à face).</p>
+    </p></br>
+  </div>
+</br></br></br></br>
+  
+  <div class ="exercices tirages">
+    <h2>Tirage horizontal</h2>
+    <hr>
+  </br>
+    <img src="image/tirage-horizontale-removebg-preview.png" style="float:right; margin-left:10px;"/> 
+    
+    <p>Installer une barre de tirage horizontale en la fixant solidement. Saisir la barre avec une prise en pronation, mains écartées de la largeur des épaules. 
+      Tirer la barre vers soi en contractant les omoplates jusqu'à ce que la barre touche le haut du torse. 
+      Relâcher en contrôlant le mouvement jusqu'à la position de départ.</p> 
+    </br>
+  </div>
+</br></br></br></br>
+  
+  <div class ="exercices rowing">
+    <h2 id="rowing">Rowing</h2>
+    <hr>
+
+  </br>
+    <img src="image/rowing-removebg-preview.png" style="float:left; margin-right:10px;"/>
+    <p>Positionner les pieds sur les cales et se pencher en avant. 
+      Prendre la barre, mains en pronation avec un écartement légèrement supérieur à la largeur des épaules. 
+      Inspirer et tirer la barre en contrôlant le mouvement jusqu'à la poitrine en gardant les coudes près du corps. 
+      Relâcher en expirant en fin d'effort et répéter l'exercice.</p></br>
+  </div>
+</br></br></br></br>
+  
+  <div class ="exercices sdt">
+    <h2>Soulevé de terre</h2>
+    <hr>
+  </br>
+    <img src="image/sdt.png" style="float:right; margin-left:10px;"/>
+    <p>Placez vos pieds à la largeur des épaules, en face de la barre, en vous penchant pour l'attraper avec une prise double par-dessus ou par-dessous. 
+      Gardez votre dos droit, vos genoux légèrement pliés et soulevez la barre en poussant vos jambes, en gardant vos bras tendus. 
+      Une fois que la barre est à hauteur des genoux, poussez vos hanches vers l'avant pour la pousser sur le haut de votre corps. 
+      Abaissez la barre en contrôlant le mouvement en sens inverse, en gardant votre dos droit tout au long de l'exercice.</p> 
+  </br>
+  </div>
+</br></br></br></br>
+  
+  <div class ="exercices squat">
+    <h2 id="squat">Squat</h2>
+    <hr>
+
+  </br>
+    <img src="image/squat.png" style="float:left; margin-right:10px;"/>
+    <p>Positionner la barre sur les trapèzes, les mains en pronation et les coudes en arrière. 
+      Fléchir les jambes jusqu'à ce que les cuisses soient parallèles au sol en gardant le dos droit. 
+      Remonter en expirant en poussant sur les talons.</p></br>
+  </div>
+</br></br></br></br>
+  
+  <div class ="exercices leg_curl">
+    <h2 id="leg_curl">Leg curl</h2>
+    <hr>
+
+  </br>
+    <img src="image/leg-curl-removebg-preview.png" style="float:right; margin-left:10px;"/>
+    <p>Allongé sur le banc, placer les talons sous le rouleau de la machine de manière à ce que les jambes soient étendues et les genoux légèrement fléchis. 
+      Contracter les muscles des fessiers et des ischio-jambiers pour soulever le poids vers les fessiers. 
+      Redescendre le poids de manière contrôlée jusqu'à la position de départ.</p></br>
+  </div>
+</br></br></br></br>
+  
+  <div class ="exercices leg_extension">
+    <h2 id="leg_extension">Leg extension</h2>
+    <hr>
+
+  </br>
+    <img src="image/leg-extension-removebg-preview.png" style="float:left; margin-right:10px;"/>
+    <p>Asseyez-vous sur la machine Leg Extension, en ajustant la hauteur du siège pour que vos genoux soient alignés avec l'axe de rotation de la machine. 
+      Placez vos chevilles sous le rouleau de la machine et ajustez la distance entre les rouleaux pour qu'ils se trouvent juste au-dessus de vos chevilles.</p>
+    <p>Ensuite, inspirez et maintenez votre tronc droit, tout en contractant vos quadriceps pour étendre complètement vos jambes. 
+      Expirez et revenez lentement à la position de départ, en gardant une tension continue dans les quadriceps tout au long de l'exercice.</p></br>
+  </div>
+</br></br></br></br>
+
+</div>
+  <footer>
+    <div class="footer_page">
+        <div class="info_site">
+            <div >
+                <a class="a_us">Qui somme-nous ?</a>
+            </div>
+            <div >
+                <a class="a_us">Nos engagements</a>
+            </div>
+            <div >
+                <a class="a_us">Parrainages</a>
+            </div>
+            <div >
+                <a class="a_us">Blog</a>
+            </div>
+            <div >
+                <a class="a_us">Forum</a>
+            </div>
+            <div >
+                <a class="a_us">Fournisseurs</a>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="logo_contact">
+                <div >
+                    <a class="a_us" href="https://www.linkedin.com/"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
+                </div>
+                <div >
+                    <a class="a_us" href="https://www.instagram.com/"><img class="icon"  src="img/insta.png" alt="linkedin"></a>
+                </div>
+                <div >
+                    <a class="a_us"  href="https://www.facebook.com/" ><img  class="icon" src="img/facebook.png" alt="linkedin"></a>
+                </div>
+                <div >
+                    <a class="a_us" href="https://www.whatsapp.com/" ><img class="icon" src="img/whatt.png" alt="linkedin"></a>
+                </div>
+            </div>
+            <div class="contactez">
+                <a class="a_us">Nous contacter par email</a>
+                <p class="a_us">Nous contacter par téléphone : 06 78 65 89 45</p>
+                <a class="a_us">Service client </a>
+            </div>
+            
+        </div>
+        <div class="paiement">
+            <a class="a_us">Moyen de paiement</a>
+            <div class="logo_paiement">
+                <a class="a_us" href="https://www.whatsapp.com/" ><img class="icon" style="width:40px" src="img/paypal.png" alt="paypal"></a>
+                <a class="a_us" href="https://www.whatsapp.com/" ><img class="icon"  style="width:40px" src="img/mastercard.png" alt="masterdard"></a>
+                <a class="a_us" href="https://www.whatsapp.com/" ><img class="icon" style="width:40px" src="img/amex.png" alt="amex"></a>
+                <a class="a_us" href="https://www.whatsapp.com/" ><img class="icon"  style="width:40px"src="img/apple-pay.png" alt="apple-pay"></a>
+            </div>
+            <a class="a_us">Politique de confidentialité</a>
+            <a class="a_us">Agence</a>
+        </div>
+    </div>
+   
+</footer>
+
+<!-- Un bouton situé en bas à gauche de la page permettantr de revenir en haut de celle ci lorsque on appuie dessus>-->
+<div class="revenir">
+  <button onclick="topFunction()" id="btnTop" title="Go to top">Haut de page</button>
+
+</div>
+
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const rangeInput = document.getElementById("range-input");
+    const seancesSpans = document.querySelectorAll(".seances");
+    const no_train = document.querySelector(".no_train");
+    const fullBody = document.querySelector(".full-body");
+    const halfBody = document.querySelector(".half-body");
+    const split = document.querySelector(".split");
+    const ppl = document.querySelector(".ppl");
+
+    rangeInput.addEventListener("input", function() {
+      seancesSpans.forEach(seancesSpan => {
+        seancesSpan.textContent = this.value;
+      });
+      if (this.value == 0 || this.value == NaN) {
+        fullBody.style.display = "none";
+        halfBody.style.display = "none";
+        split.style.display = "none";
+        ppl.style.display = "none";
+      }
+      else if (this.value >= 1 && this.value <= 2) {
+        fullBody.style.display = "block";
+        halfBody.style.display = "none";
+        split.style.display = "none";
+        ppl.style.display = "none";
+      } else if (this.value >= 3 && this.value <= 4) {
+        fullBody.style.display = "none";
+        halfBody.style.display = "block";
+        split.style.display = "none";
+        ppl.style.display = "none";
+      } else if (this.value == 6) {
+        fullBody.style.display = "none";
+        halfBody.style.display = "none";
+        split.style.display = "none";
+        ppl.style.display = "block";
+      }else {
+        fullBody.style.display = "none";
+        halfBody.style.display = "none";
+        split.style.display = "block";
+        ppl.style.display = "none";
+      }
+    });
+
+    topFunction = () => {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  });
+</script>
+
+</body>
+</html>
+
+
