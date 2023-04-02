@@ -80,8 +80,8 @@ function change_info(i){
     "Le mollet est musclé par le muscle triceps sural et les muscles péroniers latéraux, c'est-à-dire le muscle long fibulaire et le muscle court fibulaire. Il permet la flexion du pied."]
    
     sources = ['exercise/pecs.jpg','exercise/neck.PNG','exercise/shoulder.jpg','exercise/biceps.jpg',
-    'exercise/forearm.PNG','exercise/abs.jpg','exercise/obliques.jpg','exercise/quads.jpg','','exercise/traps.jpg','exercise/lats.jpg','exercise/butt.jpg',
-    'exercise/shoulder.jpg','exercise/triceps.jpg','exercise/forearm.PNG','exercise/butt.jpg','exercise/ischio.jpg','exercise/calf.jpg']
+    'exercise/forearm.png','exercise/abs.jpg','exercise/obliques.jpg','exercise/quads.jpg','','exercise/traps.jpg','exercise/lats.jpg','exercise/butt.jpg',
+    'exercise/shoulder.jpg','exercise/triceps.jpg','exercise/forearm.png','exercise/butt.jpg','exercise/ischio.jpg','exercise/calf.jpg']
    
     var name = document.getElementById('name')
     var description = document.getElementById('desc')
