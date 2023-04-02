@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="icon\dumbell2.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top_bar1">
+        <div class="top_bar1_content">
+            <a href="../clovis/index.html" class="liftlife">
+                <h1>LIFTLIFE</h1>
+            </a>
+            <div class="searchbar">
+                <form>
+                    <input type="text" placeholder="Rechercher...">
+                    <button type="submit">Go</button>
+                </form>
+            </div>
+            <div class="count">
+                <div onclick="changeColor(this)" class="personnal_button">
+                    <button class="button_count_basket"><img src="icon/icons8-utilisateur-50.png" alt="compte"></button>
+                </div>
+                <div onclick="changeColor(this)" class="personnal_button">
+                    <button class="button_count_basket"><img src="icon/icons8-panier-48.png" alt="panier"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pages">
+        <div class="pages_content">
+            <div class="page_button" onclick="redirect1()">
+                <p class="top_bar_title">Muscles</p>
+            </div>
+            <div class="page_button" onclick="redirect2()">
+                <p class="top_bar_title">Nutrition</p>
+            </div>
+            <div class="page_button2" onclick="redirect3()">
+                <p class="top_bar_title">Entrainement</p>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="left">
+            <div class="content">
+                <img src="body/body_front.png" id="bodd">
+                <div class="block front neck"  onmouseover="change('body/body_front_neck.png')" onclick="change_info(1)"></div>
+                <div class="block front shoulders"  onmouseover="change('body/body_front_shoulders.png')" onclick="change_info(2)"></div>
+                <div class="block front shoulders2"  onmouseover="change('body/body_front_shoulders.png')"onclick="change_info(2)"></div>
+                <div class="block front shoulders3"  onmouseover="change('body/body_front_shoulders.png')"onclick="change_info(2)"></div>
+                <div class="block front shoulders4"  onmouseover="change('body/body_front_shoulders.png')"onclick="change_info(2)"></div>
+                <div class="block front chest"  onmouseover="change('body/body_front_chest.png')" onclick="change_info(0)"></div>
+                <div class="block front chest2"  onmouseover="change('body/body_front_chest.png')" onclick="change_info(0)"></div>
+                <div class="block front arm"  onmouseover="change('body/body_front_arm.png')"onclick="change_info(3)"></div>
+                <div class="block front arm2"  onmouseover="change('body/body_front_forearm.png')"onclick="change_info(4)"></div>
+                <div class="block front arm3"  onmouseover="change('body/body_front_forearm.png')"onclick="change_info(4)"></div>
+                <div class="block front arm4"  onmouseover="change('body/body_front_arm.png')" onclick="change_info(3)"></div>
+                <div class="block front arm5"  onmouseover="change('body/body_front_forearm.png')"onclick="change_info(4)"></div>
+                <div class="block front arm6"  onmouseover="change('body/body_front_forearm.png')"onclick="change_info(4)"></div>
+                <div class="block front abs"  onmouseover="change('body/body_front_abs.png')"onclick="change_info(5)"></div>
+                <div class="block front obs"  onmouseover="change('body/body_front_obs.png')"onclick="change_info(6)"></div>
+                <div class="block front obs2"  onmouseover="change('body/body_front_obs.png')"onclick="change_info(6)"></div>
+                <div class="block front thighs"  onmouseover="change('body/body_front_thighs.png')"onclick="change_info(7)"></div>
+                <div class="block front thighs1"  onmouseover="change('body/body_front_thighs.png')"onclick="change_info(7)"></div>
+                <div class="block front thighs2"  onmouseover="change('body/body_front_thighs.png')"onclick="change_info(7)"></div>
+                <div class="block front thighs3"  onmouseover="change('body/body_front_calves.png')"onclick="change_info(8)"></div>
+                <div class="block front thighs4"  onmouseover="change('body/body_front_calves.png')"onclick="change_info(8)"></div>
+
+                <div class="block back btrap"  onmouseover="change('body/body_back_traps.png')"onclick="change_info(9)"></div>
+                <div class="block back btrap1"  onmouseover="change('body/body_back_traps.png')"onclick="change_info(9)"></div>
+                <div class="block back btrap2"  onmouseover="change('body/body_back_traps.png')"onclick="change_info(9)"></div>
+                <div class="block back blat"  onmouseover="change('body/body_back_lats.png')"onclick="change_info(10)"></div>
+                <div class="block back blat1"  onmouseover="change('body/body_back_lats.png')"onclick="change_info(10)"></div>
+                <div class="block back blat2"  onmouseover="change('body/body_back_lats.png')"onclick="change_info(10)"></div>
+                <div class="block back blat3"  onmouseover="change('body/body_back_lats.png')"onclick="change_info(10)"></div>
+                <div class="block back blomb"  onmouseover="change('body/body_back_lomb.png')"onclick="change_info(11)"></div>
+                <div class="block back blomb1"  onmouseover="change('body/body_back_lomb.png')"onclick="change_info(11)"></div>
+                <div class="block back bshoulders"  onmouseover="change('body/body_back_shoulders.png')"onclick="change_info(12)"></div>
+                <div class="block back bshoulders1"  onmouseover="change('body/body_back_shoulders.png')"onclick="change_info(12)"></div>
+                <div class="block back bshoulders2"  onmouseover="change('body/body_back_shoulders.png')"onclick="change_info(12)"></div>
+                <div class="block back bshoulders3"  onmouseover="change('body/body_back_shoulders.png')"onclick="change_info(12)"></div>
+                <div class="block back barm"  onmouseover="change('body/body_back_arm.png')"onclick="change_info(13)"></div>
+                <div class="block back barm2"  onmouseover="change('body/body_back_forearm.png')"onclick="change_info(14)"></div>
+                <div class="block back barm3"  onmouseover="change('body/body_back_forearm.png')"onclick="change_info(14)"></div>
+                <div class="block back barm4"  onmouseover="change('body/body_back_arm.png')"onclick="change_info(13)"></div>
+                <div class="block back barm5"  onmouseover="change('body/body_back_forearm.png')"onclick="change_info(14)"></div>
+                <div class="block back barm6"  onmouseover="change('body/body_back_forearm.png')"onclick="change_info(14)"></div>
+                <div class="block back butt"  onmouseover="change('body/body_back_butt.png')"onclick="change_info(15)"></div>
+                <div class="block back ham"  onmouseover="change('body/body_back_ham.png')"onclick="change_info(16)"></div>
+                <div class="block back ham1"  onmouseover="change('body/body_back_ham.png')"onclick="change_info(16)"></div>
+                <div class="block back calves"  onmouseover="change('body/body_back_calves.png')" onclick="change_info(17)"></div>
+                <div class="block back calves1"  onmouseover="change('body/body_back_calves.png')" onclick="change_info(17)"></div>
+            </div>
+            <div class="container_button">
+                <button class="rotate" onclick="switchSides()">
+                    <img src="body/rotate.png" id="arrow"style="width: 75px;">
+                </button>
+            </div>
+        </div>
+        <div id="info_container">
+            <a id="name">Le Corps humain</a>
+            <hr>
+            <div class="desc_container">
+                <a id="desc">Le corps humain est composé de plus de 600 muscles et ceux-ci représentent près de la moitié de notre poids.</a>
+                <a id="name" style="padding-top: 50px;">Exercice</a>
+                <hr class="sec">
+                <div id="image_container">
+                    <img src="" id="exercise"  style="max-height: 100%; min-height: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_page">
+            <div class="info_site">
+                <div >
+                    <a class="a_us">Qui somme-nous ?</a>
+                </div>
+                <div >
+                    <a class="a_us">Nos engagements</a>
+                </div>
+                <div >
+                    <a class="a_us">Parrainages</a>
+                </div>
+                <div >
+                    <a class="a_us">Blog</a>
+                </div>
+                <div >
+                    <a class="a_us">Forum</a>
+                </div>
+                <div >
+                    <a class="a_us">Fournisseurs</a>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="logo_contact">
+                    <div >
+                        <a class="a_us" href="https://www.linkedin.com/"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <div >
+                        <a class="a_us" href="https://www.instagram.com/"><img class="icon"  src="img/insta.png" alt="linkedin"></a>
+                    </div>
+                    <div >
+                        <a class="a_us"  href="https://www.facebook.com/" ><img  class="icon" src="img/facebook.png" alt="linkedin"></a>
+                    </div>
+                    <div >
+                        <a class="a_us" href="https://www.whatsapp.com/" ><img class="icon" src="img/whatt.png" alt="linkedin"></a>
+                    </div>
+                </div>
+                <div class="contactez">
+                    <a class="a_us">Nous contacter par email</a>
+                    <p class="a_us">Nous contacter par téléphone : 06 78 65 89 45</p>
+                    <a class="a_us">Service client </a>
+                </div>
+                
+            </div>
+            <div class="paiement">
+                <a class="a_us">Moyen de paiement</a>
+                <div class="logo_paiement">
+                    <a class="a_us" href="https://www.whatsapp.com/" ><img class="icon" style="width:40px" src="img/paypal.png" alt="paypal"></a>
+                    <a class="a_us" href="https://www.whatsapp.com/" ><img class="icon"  style="width:40px" src="img/mastercard.png" alt="masterdard"></a>
+                    <a class="a_us" href="https://www.whatsapp.com/" ><img class="icon" style="width:40px" src="img/amex.png" alt="amex"></a>
+                    <a class="a_us" href="https://www.whatsapp.com/" ><img class="icon"  style="width:40px"src="img/apple-pay.png" alt="apple-pay"></a>
+                </div>
+                <a class="a_us">Politique de confidentialité</a>
+                <a class="a_us">Agence</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
