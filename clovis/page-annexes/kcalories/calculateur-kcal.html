@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculateur de calories</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="all">
+		<div class="backButton">
+			<a href="../../index.html"><button>Revenir à la page précédente</button></a>
+		</div>  
+		<div class="container">
+			<h1>Calculateur de calories</h1>
+			<form>
+				<label for="weight">Poids (kg)</label>
+				<input type="number" id="weight" placeholder="Ex: 80" name="weight" required>
+
+				<label for="height">Taille (cm)</label>
+				<input type="number" id="height" placeholder="Ex: 180" name="height" required>
+
+				<label for="age">Âge</label>
+				<input type="number" id="age" placeholder="Ex: 60" name="age" required>
+
+				<label for="gender">Genre</label>
+				<select id="gender" name="gender" required>
+					<option value="male">Homme</option>
+					<option value="female">Femme</option>
+				</select>
+
+				<label for="activity-level">Niveau d'activité</label>
+				<select id="activity-level" name="activity-level" required>
+					<option value="1.2">Sédentaire (peu ou pas d'exercice)</option>
+					<option value="1.375">Léger (exercice léger 1 à 3 jours par semaine)</option>
+					<option value="1.55">Modéré (exercice modéré 3 à 5 jours par semaine)</option>
+					<option value="1.725">Intense (exercice intense 6 à 7 jours par semaine)</option>
+					<option value="1.9">Très intense (exercice intense tous les jours, ou exercice physique très difficile)</option>
+				</select>
+
+				<label for="goal">Objectif</label>
+				<select id="goal" name="goal" required>
+					<option value="maintain">Maintenir mon poids actuel</option>
+					<option value="lose">Perdre du poids (déficit calorique)</option>
+					<option value="gain">Gagner du muscle (surplus calorique)</option>
+				</select>
+
+				<button type="button" id="calculate">Calculer</button>
+
+				<div id="result"></div>
+			</form>
+			<script src="script.js"></script>
+		</div>
+		  
+	</div>
+	
+</body>
+
+
+</html>

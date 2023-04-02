@@ -1,0 +1,321 @@
+@font-face {
+    font-family: 'Noize';
+    src: url('font/NoizeSportFreeVertion-Regular.woff2') format('woff2'),
+        url('font/NoizeSportFreeVertion-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+
+}
+@font-face {
+    font-family: 'ergo';
+    src: url('font/Roboto-Black.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+
+}
+@font-face {
+    font-family: 'roboto-reg';
+    src: url('font/Roboto-Regular.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+
+}
+body {
+    margin: 0px;
+}
+
+p {
+    font-family: roboto-reg, sans-serif;
+    font-size: 19px;
+    color: rgb(56, 56, 56);
+    margin: 0px;
+ 
+}
+
+h1 {
+    color: rgb(86, 84, 84);
+    font-family: noize, sans-serif;
+}
+h2 {
+    font-family: ergo, sans-serif;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+h3 {
+    font-family: ergo, sans-serif;
+}
+.top_bar1_content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_bar1 {
+    padding-left: 30px;
+    margin: 0px;
+    background: rgb(228, 228, 228);
+    padding-top: 0px;
+}
+
+.pages {
+    background: #67cef2;
+}
+
+.pages_content {
+    display: flex;
+    margin: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.count {
+    display: flex;
+    width: 15%;
+    gap: 5px;
+}
+
+.searchbar {
+    flex-grow: 0.71;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"] {
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 0.25em;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+    margin-right: 0.5em;
+    font-size: 20px;
+}
+
+button[type="submit"] {
+    padding: 0.5em 1em;
+    background-color: #67cef2;
+    color: white;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0px;
+}
+
+button[type="submit"]:hover {
+    background-color: #19b0e7;
+    cursor: pointer;
+}
+button:hover {
+    cursor: pointer;
+}
+.page_button {
+    padding: 20px 0px;
+    width: 33%;
+    border-right: 1px solid white;
+}
+
+.page_button2 {
+    padding: 20px 0px;
+    width: 33%;
+}
+
+.page_button2>p {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.page_button>p {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.page_button:hover {
+    background: #19b0e7;
+    cursor: pointer;
+}
+
+.page_button2:hover {
+    background: #19b0e7;
+    cursor: pointer;
+}
+
+.personnal_button {
+    display: flex;
+    width: 50%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: rgb(228, 228, 228);
+    justify-content: center; 
+}
+/* .personnal_button:hover {
+    background: rgb(185, 185, 185);
+    cursor: pointer;
+} */
+.NutriMode {
+    gap: 10px;
+}
+
+.diagramms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.diagramms img {
+    width: 70%;
+    height: auto;
+}
+figcaption {
+    text-align: justify;
+    font-weight: bold;
+    color: #000000;
+}
+
+.content {
+    padding-top: 50px;
+    padding-left: 400px ;
+    padding-right: 400px ;
+}
+.introNutri {
+    gap: 20px;
+}
+
+.NutriMode {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.kcalories {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.button_count_basket {
+    padding: 20px;
+    margin: 0px;
+    border: 0px;
+    background:rgb(228, 228, 228);
+}
+
+.button_count_basket:hover {
+    background:rgb(160, 156, 156);
+    border-radius: 10px;
+}
+
+.liftlife {
+    border: 0;
+    background:rgb(228, 228, 228);
+    text-decoration: none;
+
+}
+
+.prot_in {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.prot_in:hover {
+    cursor: pointer;
+    background: #ccc;
+    margin-bottom: 20px;
+}
+
+.footer_page {
+    background: #13485c;
+    padding: 50px;
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+  
+}
+
+a:hover {
+    color: #13485c;
+}
+a {
+    color: #19b0e7;
+}
+
+.pdm2 {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.seche2 {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+
+
+.info_site {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #6c7376;
+}
+
+.a_us {
+    color: aliceblue;
+    font-family: ergo, sans-serif;
+    font-size: 19px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+    
+}
+.icon {
+    filter: invert(100%);
+}
+.icon:hover {
+    filter: invert(50%);
+}
+
+.logo_contact {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.contactez {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.paiement {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.logo_paiement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

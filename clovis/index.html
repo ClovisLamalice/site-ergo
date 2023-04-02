@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--     
+    git init
+    git add .
+    git commit -m "Push existing project to GitLab"
+    git remote add source https://gitlab.univ-nantes.fr/E228541P/siteergonomique.git
+    git push 
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sytle.css">
+    <title>Site_ergo</title>
+    <link rel="icon" href="img\dumbell2.png">
+    <script src="style_nutrition.js"></script>
+</head>
+
+<body>
+    <div class="top_bar1">
+        <div class="top_bar1_content">
+            <button class="liftlife">
+                <a href="index.html" class="liftlife">
+                    <h1>LIFTLIFE</h1>
+                </a>
+            </button>
+            <div class="searchbar">
+                <form>
+                    <input type="text" placeholder="Rechercher...">
+                    <button type="submit">Go</button>
+                </form>
+            </div>
+            <div class="count">
+                <div onclick="changeColor(this)" class="personnal_button">
+                    <button class="button_count_basket"><img src="img/compte.png" alt="compte"></button>
+                </div>
+                <div onclick="changeColor(this)" class="personnal_button">
+                    <button class="button_count_basket"><img src="img/panier.png" alt="panier"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pages">
+        <div class="pages_content">
+            <div class="page_button" onclick="redirect1()">
+                
+                <p class="top_bar_title">Muscles</p>
+            </div>
+            <div class="page_button" onclick="redirect2()">
+                <p class="top_bar_title">Nutrition</p>
+            </div>
+            <div class="page_button2" onclick="redirect3()">
+                <p class="top_bar_title">Entrainement</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- Introduction -->
+        <div class="introNutri">
+            <h2 style="margin: 0px;">
+                La nutrition
+            </h2>
+            <hr style="border: none solid rgb(170, 170, 170); opacity: 0.2;">
+            <p>
+                La musculation est une discipline qui nécessite une alimentation adaptée pour atteindre ses objectifs.
+                Les trois
+                principaux types de régimes pour la musculation sont la prise de masse, la sèche et la maintenance. La
+                prise de
+                masse consiste à manger plus de calories que l'on ne dépense pour favoriser la croissance musculaire,
+                tandis que
+                la sèche implique une réduction des calories pour perdre de la graisse tout en maintenant le muscle.
+                Enfin, le
+                régime de maintenance vise à maintenir le poids et la composition corporelle actuelle, tout en
+                améliorant la
+                performance et la santé globale. Chaque régime a ses avantages et ses inconvénients, et il est important
+                de
+                choisir celui qui convient le mieux à vos objectifs personnels.
+            </p>
+        </div>
+
+        <div class="kcalories">
+            <img src="img/calorie-planning.jpg" alt="image-kcalories" style="width:300px;height:auto;">
+            <div class="text-kcalories">
+                <h3>Les kcalories</h3>
+                <hr style="border: none solid rgb(170, 170, 170); opacity: 0.2;">
+                <p>Les kilocalories (kcal) sont une unité de mesure utilisée pour déterminer la quantité d'énergie que
+                    contiennent les aliments et la quantité d'énergie que notre corps utilise pour fonctionner.Consommer
+                    trop de kcalories peut entraîner une prise de poids sous forme de graisse.C'est pour cela qu'il est
+                    important de
+                    consommer le bon nombre de calories par jour en fonction de ses objectifs personnels. Pour cela il existe des
+                    calculateurs de kcalories comme <a href="page-annexes/kcalories/calculateur-kcal.html"> celui-ci. </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="kcalories">
+
+            <div class="text-kcalories">
+                <h3>Les Protéines</h3>
+                <hr style="border: none solid rgb(170, 170, 170); opacity: 0.2;">
+                <p>Les protéines sont des macromolécules présentes dans toutes les cellules de notre corps. Elles sont
+                    composées d'acides aminés et jouent un rôle crucial dans de nombreux processus biologiques, tels que
+                    la croissance et la réparation des tissus, le transport des nutriments, la régulation des enzymes et
+                    des hormones, ainsi que la défense immunitaire. Les sources
+                    alimentaires riches en protéines incluent les viandes, les poissons, les œufs, les légumineuses et
+                    les noix.
+                </p>
+
+            </div>
+            <img src="img/proteines.jpg" alt="image-kcalories" style="width:300px;height:auto;">
+
+        </div>
+        <h3>Calculateur de protéines</h3>
+        <hr style="border: none solid rgb(170, 170, 170); opacity: 0.2;">
+        <p>Pour <b> connaître le taux de proteine </b> en gramme par jour à consommer je vous invite à entrer votre
+            nombre de kcalories donné au part avant
+            par le calculateur dans <b> la case suivante</b> :
+        </p>
+        <input type="number" id="myRange" placeholder="Ex: 3200 Kcalories " class="prot_in">
+        <span id="rangeValue">50</span>
+
+        <script src="script.js"></script>
+        <script>
+            const range = document.getElementById("myRange");
+            const rangeValue = document.getElementById("rangeValue");
+
+            rangeValue.innerHTML = range.value; // Affiche la valeur initiale
+            const kcal = 0
+            range.addEventListener('input', function () {
+                rangeValue.innerHTML = '<p style="margin-bottom:40px; font-family: ergo, sans-serif;font-size:17px">Nombre de protéine à consommer par jour : <b>' + parseInt((this.value * 0.2) / 4) + ' </b>grammes</p>'; // Met à jour la valeur affichée
+                kcal = this.value
+
+            });
+
+        </script>
+        <!-- Les différents types de nutrition -->
+        <div class="NutriMode">
+            <div class="pdm1">
+                <h2>
+                    La Prise de masse
+                </h2>
+                <hr style="border: none solid rgb(170, 170, 170); opacity: 0.2;">
+                <div class="pdm2">
+                    <img src="img/pdm.png" alt="image-kcalories" style="width:300px;height:auto;">
+                    <p>La prise de masse est une stratégie de nutrition et d'entraînement qui vise à augmenter la
+                        quantité de masse musculaire dans le corps. Elle est souvent utilisée par les athlètes et les
+                        bodybuilders, mais elle peut également être utile pour les débutants qui cherchent à se mettre
+                        en forme. Pour réussir une prise de masse, il est important de consommer plus de calories que
+                        vous n'en brûlez chaque jour, en particulier des aliments riches en protéines. Un programme
+                        d'entraînement régulier axé sur la musculation, combiné à un régime alimentaire approprié, est
+                        essentiel pour stimuler la croissance musculaire.
+                    </p>
+                </div>
+            </div>
+            <div class="seche1">
+                <h2>
+                    La Sèche
+                </h2>
+                <hr style="border: none solid rgb(170, 170, 170); opacity: 0.2;">
+                <div class="seche2">
+
+                    <p>La sèche est une stratégie de nutrition et d'entraînement visant à réduire la quantité de graisse
+                        corporelle tout en préservant la masse musculaire. Pour réussir
+                        une sèche, il est important de suivre un régime alimentaire spécifique qui limite les calories,
+                        en particulier les glucides et les graisses, tout en maintenant un apport élevé en protéines
+                        pour préserver les muscles. Un programme d'entraînement régulier axé sur la musculation est
+                        également important pour stimuler le métabolisme et brûler des calories supplémentaires.
+                        Cependant, il est important de se rappeler que la sèche peut être un processus difficile et
+                        demande une grande discipline et un engagement envers un mode de vie sain.
+                    </p>
+                    <img src="img/seche.jpg" alt="image-kcalories" style="width:300px;height:auto;">
+                </div>
+            </div>
+            <div class="seche1">
+                <h2>
+                    La Maintenance
+                </h2>
+                <hr style="border: none solid rgb(170, 170, 170); opacity: 0.2;">
+                <div class="seche2">
+                    <img src="img/maintenance.jpg" alt="image-kcalories" style="width:300px;height:auto;">
+                    <p>La maintenance en musculation consiste à maintenir le niveau de force et de masse musculaire
+                        acquis, en s'entraînant régulièrement avec des poids et des répétitions moins intenses. Il est
+                        recommandé de faire deux à trois séances d'entraînement par semaine, de bien récupérer entre les
+                        séances et de faire des étirements. Il est possible de varier les exercices, mais il faut éviter
+                        d'en faire trop pour éviter de perdre le niveau de force et de masse musculaire. La maintenance
+                        musculaire est importante pour maintenir une condition physique et une santé optimales, tout en
+                        évitant les risques de blessures et de surmenage.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_page">
+            <div class="info_site">
+                <div >
+                    <a class="a_us">Qui somme-nous ?</a>
+                </div>
+                <div >
+                    <a class="a_us">Nos engagements</a>
+                </div>
+                <div >
+                    <a class="a_us">Parrainages</a>
+                </div>
+                <div >
+                    <a class="a_us">Blog</a>
+                </div>
+                <div >
+                    <a class="a_us">Forum</a>
+                </div>
+                <div >
+                    <a class="a_us">Fournisseurs</a>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="logo_contact">
+                    <div >
+                        <a class="a_us" href="https://www.linkedin.com/"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <div >
+                        <a class="a_us" href="https://www.instagram.com/"><img class="icon"  src="img/insta.png" alt="linkedin"></a>
+                    </div>
+                    <div >
+                        <a class="a_us"  href="https://www.facebook.com/" ><img  class="icon" src="img/facebook.png" alt="linkedin"></a>
+                    </div>
+                    <div >
+                        <a class="a_us" href="https://www.whatsapp.com/" ><img class="icon" src="img/whatt.png" alt="linkedin"></a>
+                    </div>
+                </div>
+                <div class="contactez">
+                    <a class="a_us">Nous contacter par email</a>
+                    <p class="a_us">Nous contacter par téléphone : 06 78 65 89 45</p>
+                    <a class="a_us">Service client </a>
+                </div>
+                
+            </div>
+            <div class="paiement">
+                <a class="a_us">Moyen de paiement</a>
+                <div class="logo_paiement">
+                    <a class="a_us" href="https://www.whatsapp.com/" ><img class="icon" style="width:40px" src="img/paypal.png" alt="paypal"></a>
+                    <a class="a_us" href="https://www.whatsapp.com/" ><img class="icon"  style="width:40px" src="img/mastercard.png" alt="masterdard"></a>
+                    <a class="a_us" href="https://www.whatsapp.com/" ><img class="icon" style="width:40px" src="img/amex.png" alt="amex"></a>
+                    <a class="a_us" href="https://www.whatsapp.com/" ><img class="icon"  style="width:40px"src="img/apple-pay.png" alt="apple-pay"></a>
+                </div>
+                <a class="a_us">Politique de confidentialité</a>
+                <a class="a_us">Agence</a>
+            </div>
+        </div>
+       
+    </footer>
+
+</body>
+
+</html>
