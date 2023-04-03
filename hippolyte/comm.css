@@ -67,7 +67,9 @@ h1 {
 .pages {
   background: #67cef2;
 }
-
+.slider:hover {
+  cursor:pointer;
+}
 .pages_content {
   display: flex;
   margin: 0px;
